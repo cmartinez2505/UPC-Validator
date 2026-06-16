@@ -44,3 +44,12 @@ first_11 = user_input[0:11]
 last_digit = int(user_input[11])
 
 
+print("                                 ")
+print("The first 11 digits are " + (first_11) + ".")
+print("The provided check digit is " + str(last_digit) + ".")
+print("                                 ")
+print("Calculating...")
+
+expected_last_digit = find_UPC(first_11)
+print("The expected digit is " + str(expected_last_digit) + ".")
+print("                                 ")
