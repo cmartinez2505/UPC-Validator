@@ -53,3 +53,8 @@ print("Calculating...")
 expected_last_digit = find_UPC(first_11)
 print("The expected digit is " + str(expected_last_digit) + ".")
 print("                                 ")
+
+if expected_last_digit == last_digit:
+    print("This is a VALID UPC.")
+else:
+    print("This is an INVALID UPC.")
