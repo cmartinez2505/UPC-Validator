@@ -39,6 +39,12 @@ def find_UPC(upc_string):
 
 user_input = input("Enter a 12-digit UPC: ")
 
+while len(user_input) != 12:
+    print("Please make sure you inserted 12 digits")
+    user_input = input("Enter a 12-digit UPC: ")
+
+
+
 first_11 = user_input[0:11]
 
 last_digit = int(user_input[11])
